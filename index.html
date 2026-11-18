@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmos - Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-wrapper">
+
+        <nav class="navbar">
+            <a href="#" class="logo">☀ Atmos<span>.</span></a>
+            <div class="nav-label">YOUR PERSONAL WEATHER SPACE</div>
+            <div class="live-indicator">
+                <span class="live-dot"></span> LIVE WEATHER
+            </div>
+        </nav>
+
+        <main>
+
+            <section class="hero">
+
+                <div class="hero-content">
+                    <p class="eyebrow">✦ YOUR WORLD, YOUR WEATHER</p>
+
+                    <h1>
+                        Every day has
+                        <span>its own</span>
+                        forecast.
+                    </h1>
+
+                    <p class="hero-description">
+                        Discover what's happening outside.
+                        Get real-time weather updates for any
+                        city around the world.
+                    </p>
+
+                    <form id="searchForm" class="search-form">
+                        <span class="search-icon">⌕</span>
+                        <input
+                            type="text"
+                            id="cityInput"
+                            placeholder="Search your city..."
+                            autocomplete="off"
+                            required
+                        >
+                        <button type="submit" id="searchButton">
+                            Explore <span>→</span>
+                        </button>
+                    </form>
+
+                    <p id="message" role="status">
+                        Start by searching for your city.
+                    </p>
+
+                    <div class="popular-cities">
+                        <span>POPULAR:</span>
+                        <span>Bengaluru</span>
+                        <span>Mumbai</span>
+                        <span>Delhi</span>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="sun-glow"></div>
+
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+
+                    <div class="sun-illustration">☀</div>
+
+                    <div class="floating-cloud cloud-one">☁</div>
+                    <div class="floating-cloud cloud-two">☁</div>
+
+                    <div class="visual-caption">
+                        <span>✦</span> A little sunshine, wherever you are.
+                    </div>
+
+                    <div class="mini-card mini-top">
+                        <span>☀</span>
+                        <div>
+                            <strong>Live updates</strong>
+                            <small>Real-time weather</small>
+                        </div>
+                    </div>
+
+                    <div class="mini-card mini-bottom">
+                        <span>🌍</span>
+                        <div>
+                            <strong>Worldwide</strong>
+                            <small>Explore any city</small>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="weatherCard" class="weather-card" hidden>
+                <div class="weather-heading">
+                    <div>
+                        <p class="section-label">CURRENT CONDITIONS</p>
+                        <h2 id="cityName">City Name</h2>
+                        <p id="weatherDescription">Weather condition</p>
+                    </div>
+                    <div class="weather-symbol">🌤️</div>
+                </div>
+
+                <div class="temperature">
+                    <span id="temperature">--</span><sup>°C</sup>
+                </div>
+
+                <div class="weather-details">
+                    <div class="detail">
+                        <span>💧</span>
+                        <p>Humidity</p>
+                        <h3 id="humidity">--%</h3>
+                    </div>
+
+                    <div class="detail">
+                        <span>💨</span>
+                        <p>Wind Speed</p>
+                        <h3 id="windSpeed">-- km/h</h3>
+                    </div>
+
+                    <div class="detail">
+                        <span>🌡️</span>
+                        <p>Feels Like</p>
+                        <h3 id="feelsLike">--°C</h3>
+                    </div>
+                </div>
+
+                <p id="weatherTime"></p>
+            </section>
+
+            <section class="features">
+                <div class="feature">
+                    <span class="feature-icon">🌤️</span>
+                    <div>
+                        <h3>Live Conditions</h3>
+                        <p>Stay updated with current weather.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="feature-icon">💧</span>
+                    <div>
+                        <h3>Humidity Details</h3>
+                        <p>Know the moisture in the air.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="feature-icon">🌬️</span>
+                    <div>
+                        <h3>Wind Information</h3>
+                        <p>Check the current wind speed.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Made with ☀ and curiosity.</p>
+            <p>Weather data powered by Open-Meteo</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
